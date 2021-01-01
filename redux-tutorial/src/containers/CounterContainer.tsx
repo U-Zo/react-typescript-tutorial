@@ -4,9 +4,9 @@ import Counter from '../components/Counter';
 import { CounterState, decrease, increase } from '../modules/counter';
 
 const CounterContainer: React.FC = () => {
-  const count = useSelector(
-    ({ counter }: { counter: CounterState }) => counter.count
-  );
+  const { count } = useSelector(({ counter }: { counter: CounterState }) => ({
+    count: counter.count,
+  }));
 
   const dispatch = useDispatch();
 
