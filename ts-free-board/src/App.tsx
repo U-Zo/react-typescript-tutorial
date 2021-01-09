@@ -1,10 +1,11 @@
 import React, { ReactElement } from 'react';
 import './App.css';
+import ContactsContatainer from './containers/ContactsContatainer';
 
 function App(): ReactElement {
   return (
     <>
-      <div className="App">Hello World</div>
+      <ContactsContatainer />
     </>
   );
 }
